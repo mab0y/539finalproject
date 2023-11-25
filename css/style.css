@@ -23,7 +23,7 @@ body {
     grid-template-columns: 100%;
     justify-content: space-around;
     align-items: center;
-    gap: 10%;
+    gap: 8%;
 }
 
   
@@ -81,14 +81,16 @@ body {
 }
 
 nav{
+    height: 40px;
+    margin-bottom: 5%;
     background-color: transparent;
-    padding: 25px 0; 
     text-align: center;
 } 
 
 nav li{
+    line-height: 40px;
     display:inline;
-    padding: 0 10px;
+    padding: 0 5%;
     position: relative;
 }
 
@@ -96,6 +98,7 @@ nav a{
     color: white;
     font-size: 20px;
     text-decoration: none;
+    align-items: center;
 }
 
 nav a::after {
@@ -116,14 +119,17 @@ nav a:focus::after {
 }
 
 header{
-    margin: auto;
+    position: sticky;
+    top: 0;
     background-attachment: initial;
+    backdrop-filter: blur(10px);
+    z-index: 3;
 }
 
 
 
 .witcher {
-    background-image: url('../images/witcher_3_background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/witcher_3_background.jpg');
     background-size: cover; 
     background-position: center; 
     font-family: 'thewitcher';
@@ -133,10 +139,30 @@ header{
 }
 
 .redemption {
-    background-image: url('../images/red_dead_redemption_2_background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/red_dead_redemption_2_background.jpg');
     background-size: cover; 
     background-position: center; 
     font-family: 'Chinese Rocks Rg';
+    font-weight: normal;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+.mh {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/monster_hunter_rise_background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    font-family: 'Copperplate Gothic';
+    font-weight: normal;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+.assassin {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/assassin_creed_2_background.png');
+    background-size: cover; 
+    background-position: center; 
+    font-family: 'Assassin$';
     font-weight: normal;
     font-style: normal;
     color: whitesmoke;
@@ -156,6 +182,24 @@ header{
     font-family: 'Chinese Rocks Rg';
     src: url('ChineseRocksRg-Regular.woff2') format('woff2'),
         url('ChineseRocksRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Copperplate Gothic';
+    src: url('CopperplateGothic-Bold.woff2') format('woff2'),
+        url('CopperplateGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Assassin$';
+    src: url('Assassin.woff2') format('woff2'),
+        url('Assassin.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
