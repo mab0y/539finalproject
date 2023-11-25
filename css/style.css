@@ -5,65 +5,58 @@ body {
     background-size: cover; 
 }
 
-
-.skip{
+.skip {
     position: absolute;
     top: -40px;
     height: 25px;
     background-color: white;
 }
 
-.skip:focus{
+.skip:focus {
     top: 10px;
 }
 
-#games{
+#games {
     margin:auto;
     width: 90%;
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: 100%;
     justify-content: space-around;
     align-items: center;
+    gap: 10%;
 }
 
-.flip-card {
-    perspective: 1000px;
-  }
- 
   
 .flip-card-inner {
+    margin: 0 auto;
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 500px;
     text-align: center;
     transition: transform 0.8s, z-index 0s 0.4s; 
     transform-style: preserve-3d;
-
 }
 
 .flip-card-front, .flip-card-back {
-    border-radius: 5%;
     position: absolute;
+    border-radius: 5%;
     width: 100%;
-    height: 500px;
-    backface-visibility: hidden;
+    height: 500px;  
     transition: transform 0.8s ease;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .flip-card-front {
-
     z-index: 2; 
-    transform: translate(-20px, -20px); 
+    transform: translate(-3%, -3%); 
 }
 
 .flip-card-back {
-
     z-index: 1; 
-    transform: translate(20px, 20px); 
+    transform: translate(3%, 3%); 
     overflow: auto;
 }
-
-
 
 .flip-card-inner h3 {
     font-size: 24px; 
@@ -77,36 +70,56 @@ body {
 }
 
 .platform{
+    font-size: large;
     margin-bottom: 5%;
 }
 
-nav li{
-    display:inline;
-    padding-right:20px;
-  
-  }
-  
-  nav a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none; 
-  }
+.platform button {
+    font-size: inherit;
+    margin: 0.2em; 
+    border: none; 
+}
 
-  nav{
+nav{
     background-color: transparent;
     padding: 25px 0; 
     text-align: center;
-  }
+} 
 
-  header{
+nav li{
+    display:inline;
+    padding: 0 10px;
+    position: relative;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+nav li:hover a::after,
+nav li:focus-within a::after,
+nav a:focus::after {
+    width: 100%;
+}
+
+header{
     margin: auto;
     background-attachment: initial;
-  }
-    
-.nav_items:hover,
-.nav_items:focus {
-    background-color: white;
 }
+
 
 
 .witcher {
@@ -114,10 +127,21 @@ nav li{
     background-size: cover; 
     background-position: center; 
     font-family: 'thewitcher';
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
     color: whitesmoke;
 }
+
+.redemption {
+    background-image: url('../images/red_dead_redemption_2_background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    font-family: 'Chinese Rocks Rg';
+    font-weight: normal;
+    font-style: normal;
+    color: whitesmoke;
+}
+
 
 @font-face {
     font-family: 'thewitcher';
@@ -128,3 +152,11 @@ nav li{
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Chinese Rocks Rg';
+    src: url('ChineseRocksRg-Regular.woff2') format('woff2'),
+        url('ChineseRocksRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

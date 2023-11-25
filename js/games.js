@@ -5,13 +5,13 @@ document.querySelectorAll('.flip-card').forEach(card => {
         if (front.style.zIndex === "2") {
             front.style.zIndex = "1";
             back.style.zIndex = "2";
-            front.style.transform = "translate(20px, 20px)"; 
-            back.style.transform = "translate(-20px, -20px)"; 
+            front.style.transform = "translate(3%, 3%)"; 
+            back.style.transform = "translate(-3%, -3%)"; 
         } else {
             front.style.zIndex = "2";
             back.style.zIndex = "1";
-            front.style.transform = "translate(-20px, -20px)"; 
-            back.style.transform = "translate(20px, 20px)";
+            front.style.transform = "translate(-3%, -3%)"; 
+            back.style.transform = "translate(3%, 3%)";
         }
     });
 });
