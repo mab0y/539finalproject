@@ -326,7 +326,7 @@ footer {
 }
 
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
     .flip-card-front img {
         height: auto;
         width: 90%;
@@ -336,7 +336,7 @@ footer {
     
     #games {
         margin:auto;
-        width: 90%;
+        width: 95%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: space-around;
