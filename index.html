@@ -10,6 +10,13 @@
     <link rel="preload" href="css/ChineseRocksRg-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="css/CopperplateGothic-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="css/Assassin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/TrajanPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/BF_Modernista-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/OPTIColumna-Solid.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/EASPORTS.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
     <title>My favourite games</title>
 </head>
 <body>
@@ -17,30 +24,29 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#skip">RPG</a></li>
-          <li><a href="#pricing">FPS</a></li>
-          <li><a href="#gallery">SLG</a></li>
+          <li><a href="#pricing">Home</a></li>
+          <li><a href="#gallery">Soundtrack</a></li>
         </ul>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <div id="games">
         <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front witcher">
                 <img src="images/witcher_3.png" alt="The Witcher 3: Wild Hunt">
                 <div class="platform">
-                <span>Available On: </span>
+                <p>Available On: </p>
                 <a href="https://store.steampowered.com/app/292030/_3/">
-                    <button><i class="fab fa-steam"></i></button>
-                </a>
-                <a href="https://www.playstation.com/en-us/games/the-witcher-3-wild-hunt/">
-                    <button><i class="fab fa-playstation"></i></button>
-                </a>
-                <a href="https://www.xbox.com/en-US/games/store/the-witcher-3-wild-hunt/br765873cqjd">
-                    <button><i class="fab fa-xbox"></i></button>
-                </a>
+                  <button aria-label="Visit The Witcher 3 on Steam"><i class="fab fa-steam"></i> Steam</button>
+              </a>
+              <a href="https://www.playstation.com/en-us/games/the-witcher-3-wild-hunt/">
+                  <button aria-label="Visit The Witcher 3 on PlayStation"><i class="fab fa-playstation"></i> PlayStation</button>
+              </a>
+              <a href="https://www.xbox.com/en-US/games/store/the-witcher-3-wild-hunt/br765873cqjd">
+                  <button aria-label="Visit The Witcher 3 on Xbox"><i class="fab fa-xbox"></i> Xbox</button>
+              </a>
                 </div>
               </div>
               <div class="flip-card-back witcher">
@@ -55,16 +61,16 @@
             <div class="flip-card-front redemption">
               <img src="images/red_dead_redemption_2.png" alt="Red Dead Redemption 2">
               <div class="platform">
-              <span>Available On: </span>
+              <p>Available On:</p>
               <a href="https://store.steampowered.com/agecheck/app/1174180/">
-                  <button><i class="fab fa-steam"></i></button>
-              </a>
-              <a href="https://store.playstation.com/en-us/product/UP1004-CUSA03041_00-REDEMPTIONFULL02">
-                  <button><i class="fab fa-playstation"></i></button>
-              </a>
-              <a href="https://www.xbox.com/en-US/games/red-dead-redemption-2">
-                  <button><i class="fab fa-xbox"></i></button>
-              </a>
+                <button aria-label="Visit Red Dead Redemption 2 on Steam"><i class="fab fa-steam"></i> Steam</button>
+            </a>
+            <a href="https://store.playstation.com/en-us/product/UP1004-CUSA03041_00-REDEMPTIONFULL02">
+                <button aria-label="Visit Red Dead Redemption 2 on PlayStation"><i class="fab fa-playstation"></i> PlayStation</button>
+            </a>
+            <a href="https://www.xbox.com/en-US/games/red-dead-redemption-2">
+                <button aria-label="Visit Red Dead Redemption 2 on Xbox"><i class="fab fa-xbox"></i> Xbox</button>
+            </a>            
               </div>
             </div>
             <div class="flip-card-back redemption">
@@ -76,19 +82,44 @@
 
         <div class="flip-card">
           <div class="flip-card-inner">
+            <div class="flip-card-front bf">
+              <img src="images/battlefield_2042.png" alt="Battlefield 2042">
+              <div class="platform">
+              <p>Available On:</p>
+              <a href="https://store.steampowered.com/agecheck/app/1517290/">
+                  <button aria-label="Visit Battlefield 2042 on Steam"><i class="fab fa-steam"></i> Steam</button>
+              </a>
+              <a href="https://www.playstation.com/en-us/games/battlefield-2042/">
+                  <button aria-label="Visit Battlefield 2042 on PlayStation"><i class="fab fa-playstation"></i> PlayStation</button>
+              </a>
+              <a href="https://www.xbox.com/en-US/games/battlefield-2042">
+                  <button aria-label="Visit Battlefield 2042 on Xbox"><i class="fab fa-xbox"></i> Xbox</button>
+              </a>           
+              </div>
+            </div>
+            <div class="flip-card-back bf">
+              <h3>Battlefield 2042</h3>
+              <p>The game is a futuristic first-person shooter set in a near-future world, featuring a blend of modern warfare and advanced technology. The game allows players to use futuristic weapons, drones, and vehicles, with the unique ability to air-drop vehicles anywhere. Players can choose from various specialists with unique skills, like Emma "Sundance" Rosier with a wingsuit. The game has dynamic environments, impacted by weather like tornadoes and sandstorms. It offers three main modes: the classic "All-Out Warfare" with 128-player support on newer consoles, the customizable "Battlefield Portal," and the cooperative "Hazard Zone" mode focused on team strategy and survival.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
             <div class="flip-card-front mh">
               <img src="images/monster_hunter_rise.png" alt="Monster Hunter Rise">
               <div class="platform">
-              <span>Available On: </span>
+              <p>Available On:</p>
               <a href="https://store.steampowered.com/app/1446780/MONSTER_HUNTER_RISE/">
-                  <button><i class="fab fa-steam"></i></button>
+                <button aria-label="Visit Monster Hunter Rise on Steam"><i class="fab fa-steam"></i> Steam</button>
               </a>
               <a href="https://www.playstation.com/en-us/games/monster-hunter-rise/">
-                  <button><i class="fab fa-playstation"></i></button>
+                  <button aria-label="Visit Monster Hunter Rise on PlayStation"><i class="fab fa-playstation"></i> PlayStation</button>
               </a>
               <a href="https://www.xbox.com/en-US/games/monster-hunter-rise">
-                  <button><i class="fab fa-xbox"></i></button>
-              </a>
+                  <button aria-label="Visit Monster Hunter Rise on Xbox"><i class="fab fa-xbox"></i> Xbox</button>
+              </a>            
               </div>
             </div>
             <div class="flip-card-back mh">
@@ -100,24 +131,92 @@
 
         <div class="flip-card">
           <div class="flip-card-inner">
+            <div class="flip-card-front civilization">
+              <img src="images/civilization_6.png" alt="Civilization VI">
+              <div class="platform">
+                <p>Available On:</p>
+                <a href="https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/">
+                    <button aria-label="Visit Sid Meier's Civilization VI on Steam"><i class="fab fa-steam"></i> Steam</button>
+                </a>
+                <a href="https://store.playstation.com/en-us/product/UP1001-CUSA15322_00-CIV6BASE00000000/">
+                    <button aria-label="Visit Sid Meier's Civilization VI on PlayStation"><i class="fab fa-playstation"></i> PlayStation</button>
+                </a>
+                <a href="https://www.xbox.com/en-US/games/store/sid-meiers-civilization-vi/9n4rsg99kv1x">
+                    <button aria-label="Visit Sid Meier's Civilization VI on Xbox"><i class="fab fa-xbox"></i> Xbox</button>
+                </a>                            
+              </div>
+            </div>
+            <div class="flip-card-back civilization">
+              <h3>Civilization VI</h3>
+              <p>The goal for the player is to develop a civilization from an early settlement through many in-game millennia to become a world power and achieve one of several victory conditions, such as through military domination, technological superiority, or cultural influence, over the other human and computer-controlled opponents. Players do this by exploring the world, founding new cities, building city improvements, deploying military troops to attack and defend themselves from others, researching new technologies and civics advancements, developing an influential culture, and engaging in trade and negotiations with other world leaders.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
             <div class="flip-card-front assassin">
               <img src="images/assassin_creed_2.png" alt="Assassin's Creed II">
               <div class="platform">
-              <span>Available On: </span>
+              <p>Available On:</p>
               <a href="https://store.steampowered.com/agecheck/app/33230/">
-                  <button><i class="fab fa-steam"></i></button>
+                <button aria-label="Visit Assassin's Creed II on Steam"><i class="fab fa-steam"></i> Steam</button>
               </a>
               <a href="https://store.playstation.com/en-us/product/UP0001-CUSA05008_00-ACLEGACYHD000000">
-                  <button><i class="fab fa-playstation"></i></button>
+                  <button aria-label="Visit Assassin's Creed II on PlayStation"><i class="fab fa-playstation"></i> PlayStation</button>
               </a>
               <a href="https://www.xbox.com/en-US/games/store/assassins-creed-ii/BNVMH8NVCRCT">
-                  <button><i class="fab fa-xbox"></i></button>
-              </a>
+                  <button aria-label="Visit Assassin's Creed II on Xbox"><i class="fab fa-xbox"></i> Xbox</button>
+              </a>            
               </div>
             </div>
             <div class="flip-card-back assassin">
               <h3>Assassin's Creed II</h3>
               <p>The game's plot is set in a fictional history of real-world events and follows the millennia-old struggle between the Assassins, who fight to preserve peace and free will, and the Templars, who desire peace through control. The framing story is set in the 21st century and follows Desmond Miles as he relives the genetic memories of his ancestor, Ezio Auditore da Firenze, to uncover the mysteries left behind by an ancient race known as the First Civilization in the hope of ending the Assassin-Templar conflict. The main narrative takes place at the height of the Renaissance in Italy from 1476 to 1499, and follows Ezio's journey as an Assassin while seeking revenge against those responsible for the death of his father and brothers. Gameplay focuses on using Ezio's combat, stealth, and parkour abilities to defeat enemies and explore the environment. The game features a large open world comprising several Italian cities, including Florence, Venice, Monteriggioni, San Gimignano, and Forlì, all of which have been accurately recreated to fit the game's historical setting.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front dota">
+              <img src="images/dota_2.png" alt="Dota 2">
+              <div class="platform">
+              <p>Available On:</p>
+              <a href="https://store.steampowered.com/app/570/Dota_2/">
+                <button aria-label="Visit Dota 2 on Steam"><i class="fab fa-steam"></i> Steam</button>
+              </a>            
+              </div>
+            </div>
+            <div class="flip-card-back dota">
+              <h3>Dota 2</h3>
+              <p>Dota 2 is a 2013 multiplayer online battle arena (MOBA) video game by Valve. The game is a sequel to Defense of the Ancients (DotA), a community-created mod for Blizzard Entertainment's Warcraft III: Reign of Chaos. Dota 2 is played in matches between two teams of five players, with each team occupying and defending their own separate base on the map. Each of the ten players independently controls a powerful character known as a "hero" that all have unique abilities and differing styles of play. During a match players collect experience points and items for their heroes to defeat the opposing team's heroes in player versus player combat. A team wins by being the first to destroy the other team's "Ancient", a large structure located within their base.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front fc">
+              <img src="images/fc_24.png" alt="EA Sports FC 24">
+              <div class="platform">
+              <p>Available On:</p>
+              <a href="https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/">
+                <button aria-label="Visit EA Sports FC 24 on Steam"><i class="fab fa-steam"></i> Steam</button>
+            </a>
+            <a href="https://www.playstation.com/en-us/games/ea-sports-fc/">
+                <button aria-label="Visit EA Sports FC 24 on PlayStation"><i class="fab fa-playstation"></i> PlayStation</button>
+            </a>
+            <a href="https://www.xbox.com/en-US/games/ea-sports-fc-24">
+                <button aria-label="Visit EA Sports FC 24 on Xbox"><i class="fab fa-xbox"></i> Xbox</button>
+            </a>                      
+              </div>
+            </div>
+            <div class="flip-card-back fc">
+              <h3>EA Sports FC 24</h3>
+              <p>The game is the first game in the new EA Sports FC series, developed by EA Vancouver and EA Romania, following the conclusion of EA's partnership with FIFA. Launched on 29 September 2023 for multiple platforms including Nintendo Switch, PlayStation, Windows, and Xbox, this 31st installment of EA's football series features enhanced realism and gameplay. The Ultimate Edition's cover art, reminiscent of the iconic Sgt. Pepper's Lonely Hearts Club Band album, showcases 31 football legends, though it drew mixed reactions for the accuracy of player likenesses. The game introduces HyperMotion V technology, providing lifelike player movements and AcceleRATE 2.0 for more nuanced player acceleration. New features include PlayStyles, optimizing players' in-game abilities, and an upgraded Ultimate Team mode with Evolutions and the inclusion of both male and female players. Additionally, the game expands cross-platform play options and brings significant updates to the Nintendo Switch version, utilizing the Frostbite engine for improved gameplay, although lacking some features like HyperMotion technology</p>
             </div>
           </div>
         </div>
