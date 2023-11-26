@@ -1,7 +1,7 @@
 body {
-    background-image: url('../images/body_background.gif'); 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+    background-image: url('../images/body_background_2.jpg'); 
+    background-repeat:no-repeat;
+    background-attachment:fixed; 
     background-size: cover; 
 }
 
@@ -18,20 +18,22 @@ body {
 
 #games {
     margin:auto;
-    width: 90%;
+    width: 80%;
     display: grid;
     grid-template-columns: 100%;
     justify-content: space-around;
     align-items: center;
-    gap: 8%;
+
 }
 
+.flip-card {
+    height: 600px;
+}
   
 .flip-card-inner {
     margin: 0 auto;
-    position: relative;
-    width: 90%;
-    height: 500px;
+
+    width: auto;
     text-align: center;
     transition: transform 0.8s, z-index 0s 0.4s; 
     transform-style: preserve-3d;
@@ -50,6 +52,10 @@ body {
 .flip-card-front {
     z-index: 2; 
     transform: translate(-3%, -3%); 
+}
+
+.flip-card-front img {
+    width: 90%; margin: 15% auto;
 }
 
 .flip-card-back {
@@ -71,7 +77,6 @@ body {
 
 .platform{
     font-size: large;
-    margin-bottom: 5%;
 }
 
 .platform button {
@@ -121,11 +126,19 @@ nav a:focus::after {
 header{
     position: sticky;
     top: 0;
-    background-attachment: initial;
     backdrop-filter: blur(10px);
     z-index: 3;
 }
 
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: transparent;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
 
 .witcher {
@@ -203,4 +216,14 @@ header{
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+@media screen and (min-width: 450px) {
+    .flip-card-front img {
+        height: 70%;
+        width: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
 }
