@@ -27,15 +27,14 @@ body {
 }
 
 .flip-card {
+    cursor: pointer;
     height: 600px;
 }
   
 .flip-card-inner {
     margin: 0 auto;
-
     width: auto;
     text-align: center;
-    transition: transform 0.8s, z-index 0s 0.4s; 
     transform-style: preserve-3d;
 }
 
@@ -44,14 +43,9 @@ body {
     border-radius: 5%;
     width: 100%;
     height: 500px;  
-    transition: transform 0.8s ease;
     border: 2px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-}
-
-.flip-card-front {
-    z-index: 2; 
-    transform: translate(-3%, -3%); 
+    transition: transform 1s ease-in-out;
 }
 
 .flip-card-front img {
@@ -59,8 +53,6 @@ body {
 }
 
 .flip-card-back {
-    z-index: 1; 
-    transform: translate(3%, 3%); 
     overflow: auto;
 }
 
@@ -80,16 +72,17 @@ body {
     margin-bottom: 2%;
 }
 
-.platform button {
-    font-size: inherit;
-    margin: 0.2em; 
-    border: none; 
+.platform a {
+    text-decoration: none;
+    color: white; 
+    cursor: pointer; 
 }
+
 
 nav{
     height: 50px;
     margin-bottom: 5%;
-    background-color: transparent;
+    background: linear-gradient(to top, transparent, #572bdd);
     text-align: center;
 } 
 
@@ -134,11 +127,12 @@ header{
 footer {
     text-align: center;
     padding: 10px 0;
-    background: transparent;
-    color: white;
+    background: linear-gradient(to bottom, transparent, #572bdd);
     position: relative;
     bottom: 0;
     width: 100%;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -220,6 +214,19 @@ footer {
     font-weight: normal;
     font-style: normal;
     color: whitesmoke;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(3%, 3%);
+    }
+    50% {
+        transform: translate(7%, 5%);
+    }
+}
+
+.floating {
+    animation: float 2s ease-in-out infinite;
 }
 
 
