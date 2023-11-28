@@ -17,7 +17,7 @@ body {
 }
 nav{
     height: 50px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     background: linear-gradient(to top, transparent, #572bdd);
     text-align: center;
 } 
@@ -76,21 +76,39 @@ footer {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10%;
     justify-content: space-around;
     align-items: center;
 }
 
-.spotify {
+#spotify {
     grid-column: 1 / span 2;
 }
 
-.icon {
-    padding: 20% 0;
-}
 
 .icon img{
-    height: auto;
-    width: auto;
+    cursor: pointer;
+    height: auto; 
+    width: 90%;
     background: transparent;
+    margin: 5%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 1200px) {
+    #soundtrack {
+        margin:auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #spotify {
+        grid-column: 1 / span 4;
+    }
 }
