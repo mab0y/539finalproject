@@ -1,0 +1,96 @@
+body {
+    background-image: url('../images/body_background_2.jpg'); 
+    background-repeat:no-repeat;
+    background-attachment:fixed; 
+    background-size: cover; 
+}
+
+.skip {
+    position: absolute;
+    top: -40px;
+    height: 25px;
+    background-color: white;
+}
+
+.skip:focus {
+    top: 10px;
+}
+nav{
+    height: 50px;
+    margin-bottom: 5%;
+    background: linear-gradient(to top, transparent, #572bdd);
+    text-align: center;
+} 
+
+nav li{
+    line-height: 50px;
+    display:inline;
+    padding: 0 5%;
+    position: relative;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+nav li:hover a::after,
+nav li:focus-within a::after,
+nav a:focus::after {
+    width: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, transparent, #572bdd);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#soundtrack {
+    margin:auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.spotify {
+    grid-column: 1 / span 2;
+}
+
+.icon {
+    padding: 20% 0;
+}
+
+.icon img{
+    height: auto;
+    width: auto;
+    background: transparent;
+}

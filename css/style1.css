@@ -23,7 +23,6 @@ body {
     grid-template-columns: 1fr;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .flip-card {
@@ -226,7 +225,7 @@ footer {
 }
 
 .floating {
-    animation: float 2s ease-in-out infinite;
+    animation: float 1.5s ease-in-out infinite;
 }
 
 
