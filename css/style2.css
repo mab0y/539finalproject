@@ -1,7 +1,7 @@
 body {
     background-image: url('../images/body_background_3.jpg'); 
-    background-repeat:no-repeat;
-    background-attachment:fixed; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
     background-size: cover; 
 }
 
@@ -25,7 +25,7 @@ nav {
 
 nav li {
     line-height: 50px;
-    display:inline;
+    display: inline;
     padding: 0 5%;
     position: relative;
 }
@@ -90,6 +90,8 @@ footer {
     background: transparent;
     margin: 5%;
     transition: transform 0.3s ease-in-out;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .icon img:hover {
@@ -98,7 +100,7 @@ footer {
 
 @media screen and (min-width: 1200px) {
     #soundtrack {
-        margin:auto;
+        margin: auto;
         width: 80%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

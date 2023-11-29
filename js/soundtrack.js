@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-
     var iframe = document.getElementById('spotify-link');
     var image1 = document.getElementById('witcher');
     var image2 = document.getElementById('redemption');
